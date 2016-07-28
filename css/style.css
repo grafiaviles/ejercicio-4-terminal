@@ -1,0 +1,168 @@
+@import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600';
+
+
+/*Abre Estilos Generales*/
+
+* {
+    box-sizing: border-box;
+    box-sizing: -webkit-border-box;
+    box-sizing: -moz-border-box;
+    box-sizing: -ms-border-box;
+    box-sizing: -o-border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix:before, .clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+header, section, article, aside, div, nav, footer, hgroup, figure, menu, main, summary, figcaption, img {
+    display: block;
+}
+
+
+h1, h2, h3 {
+    color: #2f2d2e;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+a {
+    text-decoration: none;
+    transition: all .4s ease;
+    color: #999999;
+}
+
+p {
+    font-size: 1em;
+    color: #999999;
+}
+
+img {
+    width: 100%;
+    position: relative;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    user-drag: none;
+}
+
+section, article, div, aside, nav, figure, img, hgroup, footer, header, summary, span {
+    display: block;
+}
+
+/*Abre Header*/
+
+
+header {
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3em;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.1);
+    
+}
+
+header .logotipo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex: auto;
+}
+
+header .logotipo img {
+    width: 70px;
+    height: 70px;
+    margin-right: 1em;
+}
+
+header .logotipo p {
+    text-align: left;
+    font-size: 1.8em;
+    font-weight: 500;
+    color: white;
+}
+
+header .logotipo p span {
+    font-size: 1em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.51);
+    display: inline-block;
+}
+
+header nav {
+    position: relative;
+    
+}
+
+header nav li {
+    float: left;
+    list-style: none;
+}
+
+header nav li a {
+    line-height: 80px;
+    padding: 0 1.5em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: white;
+    transition: all .4s ease-in-out;
+    display: block;
+}
+
+header nav li a:hover {
+    box-shadow: 0 -5px 0 0 #e82247 inset;
+    background-color: white;
+    color: #777;
+}
+
+
+/*Abre Cover*/
+
+.cover {
+    width: 100%;
+    background-image: url(../img/cover.jpg);
+    height: 500px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.cover-2 {
+    width: 100%;
+    background-color: #2f2d2e;
+    height: 1000px;
+}
+
