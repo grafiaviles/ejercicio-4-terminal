@@ -13,14 +13,20 @@
         
     <!--STYLE CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/generales.css">
     <!--STYLE CSS-->
+     
+    <!--JS-->
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!--efecto menu scroll-->
+    <script src="js/efecto-menu.js"></script>
     
     </head>
 
 <body>
 
     <!--Abre Header-->
-    <header>
+    <header class="efecto-menu">
         
             <!--Abre logotipo-->
             <figure class="logotipo clearfix">
@@ -44,7 +50,18 @@
     <!--End Cover-->
     
     <!--Open Cover-->
-    <section class="buscador"></section>
+            
+            <form class="buscador sombra" action="action-page.php">
+            
+                <input type="search" name="campo" placeholder="¿Qué andas buscando?">
+        
+                <input type="submit" name="buscar" value="BUSCAR">
+                
+            </form>
+    <!--End Cover-->
+    
+        <!--Open Cover-->
+    <section class="cover-2"></section>
     <!--End Cover-->
            
 </body>

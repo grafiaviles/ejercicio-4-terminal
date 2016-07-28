@@ -87,16 +87,25 @@ header {
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     display: flex;
     display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 3em;
     position: fixed;
+    z-index: 1000 !important;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: all .4s ease-in-out;
     
 }
 
 header .logotipo {
     display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     justify-content: flex-start;
     align-items: center;
     flex: auto;
@@ -106,6 +115,7 @@ header .logotipo img {
     width: 70px;
     height: 70px;
     margin-right: 1em;
+    transition: all .4s ease-in-out;
 }
 
 header .logotipo p {
@@ -113,6 +123,7 @@ header .logotipo p {
     font-size: 1.8em;
     font-weight: 500;
     color: white;
+    transition: all .4s ease-in-out;
 }
 
 header .logotipo p span {
@@ -145,10 +156,30 @@ header nav li a {
 
 header nav li a:hover {
     box-shadow: 0 -5px 0 0 #e82247 inset;
-    background-color: white;
-    color: #777;
 }
 
+.menu-fixed {
+    background-color: #2f2d2e;
+}
+
+.menu-fixed nav li a {
+    line-height: 65px;
+}
+
+.menu-fixed nav li a:hover {
+    box-shadow: 0 -5px 0 0 #e82247 inset;
+    color: white;
+}
+
+.menu-fixed .logotipo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 1em;
+}
+
+.menu-fixed .logotipo p {
+    font-size: 1.3em;
+}
 
 /*Abre Cover*/
 
@@ -159,8 +190,6 @@ header nav li a:hover {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center top;
-    box-shadow: 0 -20px 100px -30px rgba(0, 0, 0, .2) inset;
-    -webkit-box-shadow: 0 -20px 100px -30px rgba(0, 0, 0, .2) inset;
 }
 
 .cover-2 {
@@ -168,4 +197,77 @@ header nav li a:hover {
     background-color: white;
     height: 1000px;
 }
+
+
+/* Abre buscador */
+
+.buscador {
+    width: 950px;
+    height: 70px;
+    background-color: #f5f5f5;
+    margin: auto;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -35px;
+    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+}
+
+.buscador input[type="search"] {
+    width: 80%;
+    height: 70px;
+    margin: 0;
+    background-color: #2f2d2e;
+    border: none;
+    font-size: 1.2em;
+    padding-left: 1em;
+    color: white;
+}
+
+.buscador input[type="submit"] {
+    width: 20%;
+    height: 70px;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    -ms-appearance: button;
+    -o-appearance: button;
+    cursor: pointer;
+    border: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    background-color: #e82247;
+    color: white;
+    margin: 0;
+    transition: all .4s ease;
+}
+
+.buscador input[type="submit"]:hover {
+    background-color: #d31f41;
+}
+
+*::-webkit-input-placeholder {
+    color: #777777;
+}
+
+*::-moz-input-placeholder {
+    color: #777777;
+}
+
+*::-ms-input-placeholder {
+    color: #777777;
+}
+
+
+
+
+
+
+
+
 
