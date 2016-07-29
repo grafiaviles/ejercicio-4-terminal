@@ -27,9 +27,10 @@ body {
     text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 15px;
     -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+    background-color: #f7f7f7;
 }
 
 header, section, article, aside, div, nav, footer, hgroup, figure, menu, main, summary, figcaption, img {
@@ -51,7 +52,7 @@ h2 {
 
 h3 {
     font-size: 1.25em;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 a {
@@ -63,7 +64,7 @@ a {
 p {
     font-size: 1em;
     color: #777777;
-    line-height: 20px;
+    line-height: 22px;
 }
 
 img {
@@ -166,6 +167,7 @@ header nav li a:hover {
 
 .menu-fixed nav li a {
     line-height: 65px;
+    font-size: 1.1em;
 }
 
 .menu-fixed nav li a:hover {
@@ -211,23 +213,26 @@ header nav li a:hover {
     align-items: center;
     position: relative;
     top: -35px;
-    box-shadow: 0 0 0 2px rgb(255, 255, 255);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 
 .buscador input[type="search"] {
     width: 80%;
     height: 70px;
     margin: 0;
-    background-color: #2f2d2e;
+    background-color: white;
     border: none;
-    font-size: 1.4em;
-    padding-left: 1em;
-    color: white;
+    font-size: 1.5em;
+    padding-left: 2em;
+    color: #777777;
+    border-radius: 50px 0 0 50px;
 }
 
 .buscador input[type="submit"] {
     width: 20%;
     height: 70px;
+    border-radius: 0 50px 50px 0;
     -webkit-appearance: button;
     -moz-appearance: button;
     -ms-appearance: button;
@@ -236,33 +241,32 @@ header nav li a:hover {
     border: none;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
-    font-size: 1.4em;
-    background-color: #e82247;
+    background-color: #1DABB8;
     color: white;
     margin: 0;
     transition: background-color .4s ease;
 }
 
 .buscador input[type="submit"]:hover {
-    background-color: #cc1c3d;
+    background-color: #188993;
 }
 
 .buscador input[class="lupa"] {
     background-image: url(../img/lupa.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 45% 50%;
 }
 
 *::-webkit-input-placeholder {
-    color: #777777;
+    color: #ccc;
 }
 
 *::-moz-input-placeholder {
-    color: #777777;
+    color: #ccc;
 }
 
 *::-ms-input-placeholder {
-    color: #777777;
+    color: #ccc;
 }
 
 
@@ -271,16 +275,14 @@ header nav li a:hover {
 
 .block {
     width: 100%;
-    max-width: 1100px;
     margin: auto;
     padding-top: 4em;
     padding-bottom: 6em;
-    background-color: antiquewhite;
-
 }
 
 .servicios {
-    background-color: white;
+    width: 85%;
+    background-color: #f7f7f7;
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
@@ -303,26 +305,43 @@ header nav li a:hover {
     cursor: pointer;
 }
 
-.servicios .item-1:hover {
-    box-shadow: 0 -3px 0 #2f2d2e inset;
-}
-
-.servicios .item-1:nth-child(odd) {
-
-}
-
 .servicios .item-1 img {
     width: 100px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 1.5em;
+    opacity: .5;
+    transition: .4s ease;
 }
 
 .servicios .item-1 h3 {
     margin-bottom: 1em;   
 }
 
+/*.servicios .item-1:nth-child(1) h3 {
+    color: #e34e26;
+}
 
+.servicios .item-1:nth-child(2) h3 {
+    color: #0d5aa2;
+}
+
+.servicios .item-1:nth-child(3) h3 {
+    color: #e5a229;
+}
+
+.servicios .item-1:nth-child(4) h3 {
+    color: #e82247;
+}
+*/
+
+.servicios .item-1:hover {
+    box-shadow: 0 -3px 0 #2f2d2e inset;
+}
+
+.servicios .item-1:hover img {
+    opacity: 1;
+}
 
 
 
