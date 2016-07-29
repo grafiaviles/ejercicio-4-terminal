@@ -148,12 +148,12 @@ header nav li {
 
 header nav li a {
     line-height: 80px;
-    padding: 0 1.5em;
+    padding: 0 1em;
     font-size: 1.2em;
     letter-spacing: 1px;
     font-weight: 500;
     color: white;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease;
     display: block;
 }
 
@@ -299,49 +299,52 @@ header nav li a:hover {
     align-items: center;
     justify-content: center;
     padding: 0 2em;
-    padding-bottom: 4em;
+    padding-bottom: 2.5em;
     box-shadow: 0 -1px 0 #ccc inset;
-    transition: all .4s ease;
+    transition: all .6s ease;
     cursor: pointer;
+    position: relative;
 }
 
-.servicios .item-1 img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 1.5em;
-    opacity: .5;
-    transition: .4s ease;
+.servicios .item-1 .icon-ima {
+    display: block;
+    position: relative;
+    width: 80px;
+    height: 100px;
 }
 
-.servicios .item-1 h3 {
-    margin-bottom: 1em;   
+.servicios .item-1 .icon-ima img {
+    width: 80px;
+    height: 80px;
+    transition: .6s ease;
+    position: absolute;
 }
 
-/*.servicios .item-1:nth-child(1) h3 {
-    color: #e34e26;
+.servicios .item-1 .icon-ima .end-ima {
+    opacity: 0;
 }
-
-.servicios .item-1:nth-child(2) h3 {
-    color: #0d5aa2;
-}
-
-.servicios .item-1:nth-child(3) h3 {
-    color: #e5a229;
-}
-
-.servicios .item-1:nth-child(4) h3 {
-    color: #e82247;
-}
-*/
 
 .servicios .item-1:hover {
     box-shadow: 0 -3px 0 #2f2d2e inset;
 }
 
-.servicios .item-1:hover img {
+.servicios .item-1:hover .end-ima {
     opacity: 1;
+    transform: scale(0.8);
 }
+
+.servicios .item-1:hover .init-ima {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+
+
+.servicios .item-1 h3 {
+    margin-bottom: 1em;   
+}
+
+
 
 
 
