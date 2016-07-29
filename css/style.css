@@ -202,7 +202,9 @@ header nav li a:hover {
 /* Abre buscador */
 
 .buscador {
-    width: 1000px;
+    width: 90%;
+    min-width: 1000px;
+    max-width: 1280px;
     height: 70px;
     background-color: #f5f5f5;
     margin: auto;
@@ -283,7 +285,8 @@ header nav li a:hover {
 }
 
 .servicios {
-    width: 85%;
+    width: 90%;
+    max-width: 1280px;
     min-width: 1000px;
     background-color: #f7f7f7;
     display: flex;
