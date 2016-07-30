@@ -38,20 +38,25 @@ header, section, article, aside, div, nav, footer, hgroup, figure, menu, main, s
 }
 
 
-h1, h2, h3 {
+h1, h3 {
     color: #2f2d2e;
 }
 
 h1 {
     font-size: 2em;
+    font-weight: 500;
+    padding-bottom: .3em;
 }
 
 h2 {
     font-size: 1.5em;
+    font-weight: lighter;
+    color: #777777;
 }
 
 h3 {
     font-size: 1.25em;
+    font-weight: 500;
     letter-spacing: 2px;
 }
 
@@ -59,12 +64,18 @@ a {
     text-decoration: none;
     transition: all .4s ease;
     color: #777777;
+    font-weight: normal;
+}
+
+a:link {
+    color: white;
 }
 
 p {
     font-size: 1em;
     color: #777777;
     line-height: 22px;
+    font-weight: normal;
 }
 
 img {
@@ -202,7 +213,7 @@ header nav li a:hover {
 /* Abre buscador */
 
 .buscador {
-    width: 90%;
+    width: 80%;
     min-width: 1000px;
     max-width: 1280px;
     height: 70px;
@@ -248,11 +259,11 @@ header nav li a:hover {
     background-color: #1DABB8;
     color: white;
     margin: 0;
-    transition: background-color .4s ease;
+    transition: all .4s ease;
 }
 
 .buscador input[type="submit"]:hover {
-    background-color: #188993;
+    background-color: #e82247;
 }
 
 .buscador input[class="lupa"] {
@@ -280,11 +291,11 @@ header nav li a:hover {
 .block {
     width: 100%;
     margin: auto;
-    padding-top: 4em;
-    padding-bottom: 6em;
 }
 
 .servicios {
+    padding-top: 4em;
+    padding-bottom: 5em;
     width: 90%;
     max-width: 1280px;
     min-width: 1000px;
@@ -358,12 +369,49 @@ header nav li a:hover {
     margin-bottom: 1em;   
 }
 
+/* Abre conteido para phone */
 
+.cont-phone {
+    width: 90%;
+    max-width: 1280px;
+    min-width: 1000px;
+    height: 600px;
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
+.cont-phone hgroup {
+    width: 100%;
+    margin-bottom: 5em;
+}
 
+.item-phone {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-
+.item-phone .item-left {
+    width: 30%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding-right: 2em;
+}
 
 
 
