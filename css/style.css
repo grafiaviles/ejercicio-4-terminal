@@ -376,7 +376,6 @@ header nav li a:hover {
     width: 90%;
     max-width: 1280px;
     min-width: 1000px;
-    height: 600px;
     display: flex;
     display: -webkit-flex;
     display: -moz-flex;
