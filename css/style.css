@@ -414,39 +414,57 @@ header nav li a:hover {
 
 .item-phone .item-left .text-left {
     width: 100%;
-    padding-bottom: 5em;
+    margin-bottom: 5em;
     position: relative;
     display: flex;
     display: -webkit-flex;
     justify-content: flex-start;
     align-items: flex-start;
-    text-align: right;
     transition: all .4s ease;
     cursor: pointer;
 }
 
 .item-phone .item-left .text-left:hover {
     transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+    -moz-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    -o-transform: translateX(20px);
 }
 
 /*Open Item Derecho*/
 
 .item-phone .item-left .text-der {
-    text-align: left;
+    flex-direction: row-reverse;
+
 }
 
 .item-phone .item-left .text-der .grupo-text-der {
-    padding-left: 1em;
+    text-align: left; 
+    margin-left: 2em;
 }
 
 .item-phone .item-left .text-der:hover {
     transform: translateX(-20px);
+    -webkit-transform: translateX(-20px);
+    -moz-transform: translateX(-20px);
+    -ms-transform: translateX(-20px);
+    -o-transform: translateX(-20px);
+}
+
+.item-phone .item-left .text-left:hover .iconmoon {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
 }
 
 /*End Item Derecho*/
 
 .item-phone .item-left .text-left .grupo-text-left {
-    padding-right: 1em;
+    padding-right: 2em;
+    text-align: right;
 }
 
     .item-phone .item-left .text-left .grupo-text-left h3, .item-phone .item-left .text-left .grupo-text-der h3 {
@@ -454,10 +472,9 @@ header nav li a:hover {
     }
 
 
-.item-phone .item-left .text-left i {
-    position: relative;;
+.item-phone .item-left .text-left .iconmoon {
     font-size: 3em;
-    align-self: flex-start;
+    transition: all .4s ease;
 }
 
     .item-phone .item-left .text-left i.icon-account_circle {
@@ -498,7 +515,7 @@ header nav li a:hover {
     position: relative;
 }
 
-.item-center figure img {
+.item-center img {
     width: 409px;
     height: 725px;
 }
