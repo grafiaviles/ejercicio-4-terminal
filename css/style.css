@@ -58,6 +58,7 @@ h3 {
     font-size: 1.25em;
     font-weight: 500;
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 a {
@@ -399,19 +400,113 @@ header nav li a:hover {
     display: -o-flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .item-phone .item-left {
     width: 30%;
-    height: 500px;
     display: flex;
     flex-direction: column;
-    background-color: white;
     justify-content: flex-start;
     align-items: flex-end;
-    padding-right: 2em;
+    padding-top: 4em;
 }
+
+.item-phone .item-left .text-left {
+    width: 100%;
+    padding-bottom: 5em;
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: right;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+
+.item-phone .item-left .text-left:hover {
+    transform: translateX(20px);
+}
+
+/*Open Item Derecho*/
+
+.item-phone .item-left .text-der {
+    text-align: left;
+}
+
+.item-phone .item-left .text-der .grupo-text-der {
+    padding-left: 1em;
+}
+
+.item-phone .item-left .text-der:hover {
+    transform: translateX(-20px);
+}
+
+/*End Item Derecho*/
+
+.item-phone .item-left .text-left .grupo-text-left {
+    padding-right: 1em;
+}
+
+    .item-phone .item-left .text-left .grupo-text-left h3, .item-phone .item-left .text-left .grupo-text-der h3 {
+        margin-bottom: .5em;
+    }
+
+
+.item-phone .item-left .text-left i {
+    position: relative;;
+    font-size: 3em;
+    align-self: flex-start;
+}
+
+    .item-phone .item-left .text-left i.icon-account_circle {
+        color: #e82247;
+        
+    }
+
+    .item-phone .item-left .text-left i.icon-android {
+        color: #1DABB8;
+    }
+
+    .item-phone .item-left .text-left i.icon-poll {
+        color: #2659a5;
+    }
+
+    .item-phone .item-left .text-der i.icon-photo {
+        color: #e82247;
+        
+    }
+
+    .item-phone .item-left .text-der i.icon-headset {
+        color: #2f2d2e;
+    }
+
+    .item-phone .item-left .text-der i.icon-games {
+        color: #e5a229;
+    }
+
+
+/*Abre Imagen Phone*/ 
+
+.item-center {
+    width: 40%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.item-center figure img {
+    width: 409px;
+    height: 725px;
+}
+
+
+
+
+
 
 
 
