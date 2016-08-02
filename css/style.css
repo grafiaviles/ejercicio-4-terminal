@@ -418,7 +418,7 @@ header nav li a:hover {
 
 .item-phone .item-left .text-left {
     width: 100%;
-    margin-bottom: 5em;
+    margin-bottom: 4em;
     position: relative;
     display: flex;
     display: -webkit-flex;
@@ -456,13 +456,13 @@ header nav li a:hover {
     -o-transform: translateX(-20px);
 }
 
-.item-phone .item-left .text-left:hover .iconmoon {
+/*.item-phone .item-left .text-left:hover .iconmoon {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
-}
+}*/
 
 /*End Item Derecho*/
 
@@ -520,13 +520,38 @@ header nav li a:hover {
     z-index: 10;
 }
 
-.item-center img {
+.item-center img.iphone {
     width: 409px;
     height: 725px;
-
 }
 
+.item-center img.icon-yo {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 290px;
+    left: 75px;
+    z-index: 20;
+}
 
+.item-center img.orig-1 {
+    width: 97px;
+    height: 104px;
+    position: absolute;
+    bottom: 150px;
+    left: 190px;
+    z-index: 20;
+}
+
+.item-center img.orig-2 {
+    width: 151px;
+    height: 161px;
+    position: absolute;
+    bottom: 10px;
+    right: 80px;
+    z-index: 20;
+    cursor: pointer;
+}
 
 
 
@@ -536,14 +561,14 @@ header nav li a:hover {
     width: 100%;
     margin: auto;
     position: relative;
-    top: -115px;
+    top: -155px;
 }
 
 
 .block-top hgroup {
     background-color: #1DABB8;
     margin-bottom: 0;
-    padding: 7em 0 10em 0;
+    padding: 9em 0 10em 0;
     background-image: url(../img/text.png);
 }
 
@@ -629,6 +654,7 @@ header nav li a:hover {
     margin: auto;
     margin-bottom: .5em;
     border-radius: 5px;
+    font-weight: 600;
 }
 
 .cont-tablas .tabla-precio .iconos-precios {
@@ -680,19 +706,20 @@ header nav li a:hover {
 .cont-tablas .tabla-precio a {
     margin-top: 1em;
     width: 100%;
-    background-color: #2f2d2e;
+    border: solid 1px #2f2d2e;
+    background-color: transparent;
+    color: #2f2d2e;
     display: inline-block;
     line-height: 3em;
     border-radius: 30px;
     font-weight: 600;
     letter-spacing: 1px;
-    border: solid 1px transparent;
 }
 
 .cont-tablas .tabla-precio a:hover, .cont-tablas .tabla-precio .active-btn {
     border: solid 1px #2f2d2e;
-    background-color: transparent;
-    color: #2f2d2e;
+    background-color: #2f2d2e;
+    color: white;
 }
 
 .cont-tablas .tabla-precio .active-btn:hover {
