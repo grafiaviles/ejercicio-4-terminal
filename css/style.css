@@ -203,6 +203,8 @@ header nav li a:hover {
     width: 50px;
     height: 50px;
     margin-right: 1em;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 .menu-fixed .logotipo p {
@@ -766,8 +768,12 @@ input:-ms-input-placeholder {
     top: -75px;
     left: 50%;
     margin-left: -75px;
-    animation: shimmy 3s infinite;
+    animation: shimmy 2s infinite;
+    -webkit-animation: shimmy 1s infinite; /* Chrome, Safari, Opera */
+    -moz-animation: shimmy 1s infinite; /* Chrome, Safari, Opera */
     animation-direction: alternate;
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    -moz-animation-direction: alternate; /* Chrome, Safari, Opera */
 }
 
 
