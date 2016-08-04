@@ -106,13 +106,14 @@ section, article, div, aside, nav, figure, img, hgroup, footer, header, summary,
 /*Abre Header*/
 
 
+
 header {
     width: 100%;
     min-width: 960px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     display: flex;
-    display: -webkit-flex;
+    display: -webkit-flex /* Safari */;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
@@ -253,6 +254,11 @@ header nav li a:hover {
     padding-left: 2em;
     color: #777777;
     border-radius: 50px 0 0 50px;
+    transition: all .4s ease;
+}
+
+.buscador input[type="search"]:focus {
+    width: 100%;
 }
 
 .buscador input[type="submit"] {
@@ -283,17 +289,28 @@ header nav li a:hover {
     background-position: 45% 50%;
 }
 
-*::-webkit-input-placeholder {
-    color: #ccc;
+/**::-webkit-input-placeholder {
+    color: #bcbcbc;
 }
 
 *::-moz-input-placeholder {
-    color: #ccc;
+    color: #bcbcbc;
 }
 
 *::-ms-input-placeholder {
-    color: #ccc;
+    color: #bcbcbc;
+}*/
+
+input::-webkit-input-placeholder {
+  color: #a2a2a2;
 }
+input:-moz-placeholder {
+  color: #a2a2a2;
+}
+input:-ms-input-placeholder {
+  color: #a2a2a2;
+}
+
 
 
 
@@ -554,7 +571,6 @@ header nav li a:hover {
 }
 
 
-
 /*Abre Block Top*/
 
 .block-top {
@@ -594,6 +610,7 @@ header nav li a:hover {
     max-width: 1280px;
     min-width: 960px;
     top: -100px;
+    z-index: 100;
 }
 
 .cont-tablas .tabla-precio {
@@ -726,6 +743,181 @@ header nav li a:hover {
     background-color: #2f2d2e;
     color: white;
 }
+
+
+/*Newsletter*/
+
+.full-cont {
+    background-color: #2f2d2e;
+    width: 100%;
+    padding: 7em 0 3em 0;
+    position: relative;
+    align-self: flex-end;
+    background-image: url(../img/texture-2.png);
+    background-position: center bottom;
+    background-attachment: fixed;
+    top: -100px;
+}
+
+.icon-down {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -75px;
+    left: 50%;
+    margin-left: -75px;
+    animation: shimmy 3s infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes shimmy {
+  0% {
+    transform: translate(0, 0);    
+  }
+  100% {
+    transform: translate(0, 20px);
+  }
+}
+
+.center-cont, .datos {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    margin: auto;
+    max-width: 1280px;
+    min-width: 960px;
+}
+
+.center-cont {
+    padding-bottom: 3em;
+    border-bottom: 1px solid gray;
+    
+}
+
+.center-cont h3 {
+    text-align: left;
+    color: white;
+    text-transform: none;
+    font-size: 1.4em;
+    width: 65%;
+}
+
+.center-cont h3 mark {
+    background-color: transparent;
+    color: #1DABB8;
+    font-weight: 600;
+    text-transform: none;
+}
+
+.center-cont .info {
+    align-items: flex-start;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex: auto;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.center-cont .info input.email {
+    width: 60%;
+    border: none;
+    outline: none;
+    color: #777;
+    line-height: 50px;
+    padding: 0 1.5em;
+    font-size: 1.2em;
+    border-radius: 25px 0 0 25px;
+    transition: all .4s ease;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.center-cont .info input.email[attribute="placeholder"]{
+    color: white;
+}
+
+.center-cont .info input.email:focus {
+    width: 95%;
+    background-color: white;
+}
+
+.center-cont .info input.btn-info {
+    font-size: 1.2em;
+    line-height: 50px;
+    width:  40%;
+    background-color: #1DABB8;
+    border: none;
+    outline: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 0 25px 25px 0;
+    transition: all .4s ease;
+}
+
+.center-cont .info input.btn-info:hover {
+    background-color: #e82247;
+}
+
+
+.datos {
+    padding-top: 2em;
+}
+
+.datos h6 {
+    color: gray;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: normal;
+}
+
+.datos .menu-down {
+    flex: auto;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.datos .menu-down a {
+    padding: 0 1em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: white;
+}
+
+.datos .menu-down a:hover {
+    color: #e82247;
+}
+
+.datos .redes {
+    width: 19%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-end;
+}
+
+.datos .redes a img {
+    width: 40px;
+    height: 40px;
+    margin-left: 1em;
+    opacity: .3;
+    transition: all .4s ease;
+}
+
+.datos .redes a img:hover {
+    opacity: 1;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+
+
+
+
+
 
 
 
