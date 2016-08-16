@@ -879,30 +879,20 @@ input:-ms-input-placeholder {
     font-weight: normal;
 }
 
-.datos .menu-down {
-    flex: auto;
+.datos .redes {
+    width: 40%;
     display: flex;
     display: -webkit-flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.datos .menu-down a {
-    padding: 0 1em;
-    letter-spacing: 2px;
-    font-weight: 500;
+.datos .redes p {
     color: white;
-}
-
-.datos .menu-down a:hover {
-    color: #e82247;
-}
-
-.datos .redes {
-    width: 19%;
-    display: flex;
-    display: -webkit-flex;
-    justify-content: flex-end;
+    font-size: 1em;
+    text-align: right;
+    letter-spacing: 2px;
+    font-weight: normal;
 }
 
 .datos .redes a img {
